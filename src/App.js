@@ -5,6 +5,7 @@ import { AboutPage } from './pages/aboutPage';
 import { Navbar } from './components/navBar';
 import { ContactPage} from './pages/contactPage';
 import { ArticlePage } from './pages/articlesPage';
+import { Watchpage } from './pages/watchPage';
 
 function App() {
   return (
@@ -20,7 +21,10 @@ function App() {
               <Route path="/about/contact" element={<ContactPage />} />
           </Route>
 
-          <Route path="/articles/:id" element={<ArticlePage />} />
+          <Route path="/articles/:id/media/:photoId" element={<ArticlePage />} />
+
+          <Route path="/watch" element={<Watchpage />} />
+
 
 
       </Routes>

@@ -3,10 +3,13 @@ import { useParams } from "react-router-dom";
 
 export function ArticlePage(props) {
 
-    let {id} = useParams();
+    let {id, photoId} = useParams();
 
     return(
-        <h1> Article ID is {id}! </h1>
+        <div>
+            <h1> Article ID is {id}! </h1>
+            <h1> Photo ID is {photoId}! </h1>
+        </div>
     )
 
 }
