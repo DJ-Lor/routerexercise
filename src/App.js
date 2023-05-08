@@ -5,7 +5,7 @@ import { AboutPage } from './pages/aboutPage';
 import { Navbar } from './components/navBar';
 import { ContactPage} from './pages/contactPage';
 import { ArticlePage } from './pages/articlesPage';
-import { Watchpage } from './pages/watchPage';
+import { WatchPage } from './pages/watchPage';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
 
           <Route path="/articles/:id/media/:photoId" element={<ArticlePage />} />
 
-          <Route path="/watch" element={<Watchpage />} />
+          <Route path="/watch" element={<WatchPage />} />
 
 
 
